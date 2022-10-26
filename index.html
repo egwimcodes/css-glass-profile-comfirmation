@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation page</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: hsl(150, 100%, 84%);
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color:hsl(142, 69%, 61%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Contact_container{
+            width: 100%;
+            max-width: 400px;
+            height: 500px;
+            background-color: hsl(142, 69%, 61%);
+            box-shadow: inset 0 0 10px 1px hsl(150, 100%, 84%);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px 0px 20px;
+        }
+        .profile_con{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .profile_con .social_icons{
+            width: 60px;
+            height: 130px;
+            margin-top: -90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .social_icons i{
+            font-size: 30px;
+            color: hsl(150, 100%, 84%);
+            cursor: pointer;
+            margin-left: -70px;
+        }
+
+        .profile{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: hsl(142, 69%, 61%);
+            box-shadow:inset 0 0 10px 1px hsl(150, 100%, 84%);
+            margin-top: -100px;
+            margin-left: -120px;
+        }
+        .pro_img{
+            transform: scaleX(-1);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: contain;
+            
+        }
+        .home{
+            font-size: 30px;
+            color: hsl(150, 100%, 84%);
+            position: absolute;
+            margin-top: -140px;
+            margin-right: -350px;
+        }
+        .message_ h2{
+            text-align: center;
+            font-weight: 100%;
+        }
+        .message_ P{
+            text-align: center;
+            font-weight: 1000;
+            font-weight: 100%;
+        }
+        .message_ h2 span{
+            font-size: larger;
+            font-weight: 1500;
+            text-align: center;
+        }
+        .Contact_container .varify{
+            width: 100%;
+            height: 150px;
+            background-color: transparent;
+            margin-bottom: -100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .varify .check{
+            width: 100px;
+            height: 100px;
+            background-color: hsl(142, 69%, 61%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 0 10px 1px hsl(150, 100%, 84%);
+            cursor: pointer;
+            /* position: absolute ; 
+            visibility: hidden; */
+            visibility: visible;
+        }
+        .uncheck{
+            width: 100px;
+            height: 100px;
+            background-color: hsl(142, 69%, 61%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 0 10px 1px hsl(150, 100%, 84%);
+            cursor: pointer;
+        /*  visibility: visible; */
+            position: absolute; 
+            visibility: hidden; 
+        }
+
+        .check i{
+            font-size: 50px;
+            color: hsl(117, 100%, 50%);
+        }
+        .check h2{
+            font-size: 30px;
+            font-weight: 100%;
+            color: hsl(150, 100%, 84%);
+            margin-top: 150px;
+            position: absolute;
+        }
+        .uncheck i{
+            font-size: 50px;
+            color: hsl(0, 100%, 50%);
+        }
+        .uncheck h2{
+            font-size: 30px;
+            font-weight: 100%;
+            color: hsl(150, 100%, 84%);
+            margin-top: 150px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="Contact_container">
+        <div class="profile_con">
+            <div class="social_icons">
+                <a href="https://web.facebook.com/Offsnowwisdom/" target="_blank" class="home__social-icon">
+                    <i class="uil uil-github-alt"></i>
+               </a>
+                <a href="https://www.linkedin.com/in/snow-wisdom-807a49251"  target="_blank" class="home__social-icon">
+                     <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100080510724565" target="_blank" class="home__social-icon">
+                    <i class="uil uil-facebook-f"></i>
+               </a>
+            </div>
+            <div class="profile">
+                <img class="pro_img" src="assets/img/rsz_perfil.png" alt="" srcset="">
+            </div>
+            <div class="home">
+                <a href="index.php" class="home__social-icon">
+                    <i class="uil uil-home"></i>
+               </a>
+            </div>
+        </div>
+        
+        <div class="message_">
+            <p>OFFICIAL SNOW~WISDOM</p>
+            <h2>Thank you for contacting<br></h2>
+        </div>
+        <div class="varify">
+            <div class="check">
+                <i class="uil uil-check"></i>
+                <h2>Sent Successful</h2>
+            </div>
+            <div class="uncheck">
+                <i class="uil uil-times"></i>
+                <h2>Unsuccessful</h2>
+            </div>
+        </div>
+    </div>
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+</body>
+</html>
